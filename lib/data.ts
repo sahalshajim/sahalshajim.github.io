@@ -45,7 +45,7 @@ export const impactStats: ImpactStat[] = [
 export const researchHighlights: Highlight[] = [
   [
     {
-      text: "First / joint first-author publications at leading AI venues including ",
+      text: "First / co-author publications at leading AI venues including ",
     },
     { text: "EMNLP", bold: true },
     { text: ", " },
