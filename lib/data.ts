@@ -76,7 +76,7 @@ export const researchHighlights: Highlight[] = [
       url: "https://aclanthology.org/2025.findings-emnlp.756/",
       bold: true,
     },
-    { text: " and was featured on " },
+    { text: " Findings and was featured on " },
     {
       text: "LinkedIn by Yann LeCun",
       url: "https://www.linkedin.com/posts/yann-lecun_fine-tuning-llama-31-researchers-at-mbzuai-activity-7274852534874214401-TTiZ",
