@@ -12,7 +12,7 @@ import type {
 
 export const profile = {
   name: "Sahal Shaji Mullappilly",
-  title: "PhD in Computer Vision · MBZUAI",
+  title: "PhD in Computer Vision · MBZUAI · Google PhD Fellow",
   tagline:
     "Advancing multilingual multimodal medical foundation models for accessible, clinically grounded, and generalizable healthcare AI.",
   location: "Abu Dhabi, UAE",
@@ -39,10 +39,21 @@ export const impactStats: ImpactStat[] = [
   { value: "1,000+", label: "Citations" },
   { value: "2,000+", label: "GitHub stars" },
   { value: "~1M", label: "Model & dataset downloads" },
-  { value: "1 + 2", label: "US patents granted / pending" },
+  { value: "3 + 1", label: "US patents granted / pending" },
 ];
 
 export const researchHighlights: Highlight[] = [
+  [
+    { text: "Recipient of the " },
+    {
+      text: "Google PhD Fellowship 2026 in Machine Perception",
+      url: "https://blog.google/company-news/outreach-and-initiatives/google-org/phd-fellows-2026/",
+      bold: true,
+    },
+    {
+      text: ", an international fellowship recognizing research excellence and innovation among promising doctoral researchers worldwide.",
+    },
+  ],
   [
     {
       text: "First / co-author publications at leading AI venues including ",
@@ -135,14 +146,14 @@ export const researchHighlights: Highlight[] = [
     { text: " of publicly released models and datasets." },
   ],
   [
-    { text: "Recipient of a granted " },
+    { text: "Three granted " },
     {
-      text: "US Patent",
+      text: "US patents",
       url: "https://patents.google.com/patent/US12380677B2/en",
       bold: true,
     },
     {
-      text: " for open-world semi-supervised object detection, with additional U.S. patent filings in bilingual medical LLMs and pixel-grounded multimodal models.",
+      text: " covering open-world semi-supervised object detection, bilingual medical LLMs, and streaming text-to-speech for LLMs, with an additional US patent pending for pixel-grounded multimodal models.",
     },
   ],
   [
@@ -233,6 +244,7 @@ export const publications: Publication[] = [
     authors: [
       ME,
       "Mohammed Irfan Kurpath",
+      "Jaseel Muhammad Kaithakkodan",
       "Omair Mohamed",
       "Mohamed Zidan",
       "Fahad Khan",
@@ -242,11 +254,11 @@ export const publications: Publication[] = [
     ],
     meIndex: 0,
     coFirst: [0, 1],
-    venue: "arXiv 2026",
+    venue: "EMNLP 2026 — Findings",
     description:
       "An open-ended reinforcement learning framework for medical multimodal models, moving beyond brittle multiple-choice training toward clinically grounded free-form answers. Composite reward design and an LLM-as-judge evaluation framework improve open-ended medical reasoning across both text and image-text benchmarks using only ~51K instruction samples.",
     links: [
-      { label: "arXiv", url: "https://arxiv.org/abs/2602.23363" },
+      { label: "Paper", url: "https://aclanthology.org/2026.findings-emnlp.2133/" },
       { label: "Project", url: "https://medix.cvmbzuai.com/" },
       { label: "GitHub", url: "https://github.com/mbzuai-oryx/MediX-R1" },
       {
@@ -371,32 +383,21 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "LongShOT: A Benchmark and Agentic Framework for Omni-Modal Reasoning and Tool Use in Long Videos",
+      "Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation",
     authors: [
       "Mohammed Irfan Kurpath",
       "Jaseel Muhammad Kaithakkodan",
-      "Jinxing Zhou",
       ME,
-      "Mohammad Almansoori",
-      "Noor Ahsan",
-      "Beknur Kalmakhanbet",
-      "Sambal Shikhar",
-      "Rishabh Lalla",
-      "Jean Lahoud",
-      "Mariette Awad",
-      "Fahad Shahbaz Khan",
-      "Salman Khan",
-      "Rao Muhammad Anwer",
+      "Ivan Laptev",
       "Hisham Cholakkal",
     ],
-    meIndex: 3,
-    coFirst: [0, 1],
-    venue: "CVPR 2026 — Findings",
+    meIndex: 2,
+    venue: "EMNLP 2026 — Findings",
     description:
-      "A benchmark and agentic framework for long-video understanding that goes beyond vision-only tasks by incorporating speech, audio, tool use and open-ended reasoning. Designed to diagnose failures in perception, cross-modal integration and long-context reasoning, making evaluation of real-world omni-modal video systems more realistic and interpretable.",
+      "A compact 0.9B-parameter embedding model that maps text, speech, audio, images, video and visually rich documents into one shared space without updating any text-side parameters, so text retrieval does not degrade. Dense-caption distillation from the frozen backbone, lightweight projectors and phased LoRA adapters bind the new modalities, with a 2.3B variant competitive with closed API embedders.",
     links: [
-      { label: "arXiv", url: "https://arxiv.org/abs/2512.16978" },
-      { label: "GitHub", url: "https://github.com/mbzuai-oryx/longshot" },
+      { label: "Paper", url: "https://aclanthology.org/2026.findings-emnlp.2470/" },
+      { label: "Project", url: "https://omniembed.cvmbzuai.com" },
     ],
   },
   {
@@ -463,9 +464,26 @@ export const patents: Patent[] = [
       "Timothy Baldwin",
       "Hisham Cholakkal",
     ],
-    status: "Pending",
-    number: "US20250266037A1",
-    url: "https://patents.google.com/patent/US20250266037A1/en",
+    status: "Granted",
+    number: "US12725615",
+    url: "https://patents.justia.com/patent/12725615",
+  },
+  {
+    title:
+      "LLMVoX: Autoregressive streaming text-to-speech model for any large language model (LLM)",
+    authors: [
+      "Sambal Shikhar",
+      "Mohammed Irfan Kurpath",
+      ME,
+      "Jean Lahoud",
+      "Fahad Shahbaz Khan",
+      "Rao Muhammad Anwer",
+      "Salman Khan",
+      "Hisham Cholakkal",
+    ],
+    status: "Granted",
+    number: "US12784733",
+    url: "https://patents.justia.com/patent/12784733",
   },
   {
     title: "System and method of pixel grounding large multimodal model",
@@ -492,17 +510,16 @@ export const education: EducationItem[] = [
     degree: "PhD in Computer Vision",
     institution: "Mohamed bin Zayed University of Artificial Intelligence",
     period: "Aug 2023 — Present",
-    notes: "UAE Golden Visa",
+    notes: "Google PhD Fellowship 2026 · UAE Golden Visa",
   },
   {
     degree: "MSc in Computer Vision",
     institution: "Mohamed bin Zayed University of Artificial Intelligence",
-    period: "Sep 2022",
+    period: "May 2023",
     gpa: "GPA 3.84 / 4.0",
-    notes: "UAE Golden Visa",
   },
   {
-    degree: "BTech in Computer Science Engineering",
+    degree: "BTech in Computer Science and Engineering",
     institution: "National Institute of Technology, Puducherry",
     period: "May 2021",
     gpa: "GPA 9.04 / 10",
@@ -523,15 +540,15 @@ export const experience: ExperienceItem[] = [
     period: "Jun 2025",
   },
   {
+    role: "Machine Learning Engineer",
+    org: "General Department of Artificial Intelligence, Dubai Police HQ",
+    period: "Sep 2022",
+  },
+  {
     role: "Machine Learning Intern",
     org: "Microsoft, Dubai Internet City",
     period: "May 2019",
     link: "https://drive.google.com/file/d/1Zl9whR17-hb2-7DxlJD4dj-cJ6ZTejyt/view",
-  },
-  {
-    role: "Machine Learning Engineer",
-    org: "General Department of Artificial Intelligence, Dubai Police HQ",
-    period: "Sep 2022",
   },
 ];
 
@@ -566,8 +583,15 @@ export const interdisciplinary: string[] = [
 ];
 
 export const awards: Award[] = [
+  {
+    title: "Google PhD Fellowship 2026 — Machine Perception (USD 50,000)",
+    year: "2026",
+  },
   { title: "Emerging Impact Award — MBZUAI CV Department", year: "2026" },
-  { title: "US Patent (US12380677B2) — Open-World Satellite Object Detection", year: "2025" },
+  {
+    title: "3 Granted US Patents (US12380677B2, US12725615, US12784733)",
+    year: "2026",
+  },
   { title: "Meta Llama Impact Innovation Award (BiMediX2)", year: "2024" },
   { title: "UAE Golden Visa — Outstanding University Student", year: "2023" },
   { title: "ADAFSA Abu Dhabi Govt Hackathon — Winning Team (AED 30,000)", year: "2021" },
@@ -577,6 +601,14 @@ export const awards: Award[] = [
 ];
 
 export const featuredPosts: FeaturedPost[] = [
+  {
+    eyebrow: "LinkedIn · Google PhD Fellowship",
+    title: "Selected as a 2026 Google PhD Fellow",
+    dek: "Recognized for research in open, bilingual medical AI — advancing clinical reasoning, medical image understanding and healthcare accessibility in English and Arabic through BiMediX and MediX-R1.",
+    href: "https://www.linkedin.com/posts/sahalshajim_alhamdulillah-im-extremely-grateful-and-activity-7526762242864775168-a_ZL",
+    image: "/featured/google-phd.jpg",
+    objectPosition: "center 20%",
+  },
   {
     eyebrow: "LinkedIn · Yann LeCun",
     title: "Yann LeCun featuring BiMediX2",

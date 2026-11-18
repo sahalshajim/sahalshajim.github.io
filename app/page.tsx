@@ -1,3 +1,4 @@
+import AwardsSection from "@/components/AwardsSection";
 import ContactSection from "@/components/ContactSection";
 import EducationSection from "@/components/EducationSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -21,6 +22,7 @@ export default function Home() {
         <FeaturedPosts />
         <PublicationsSection />
         <HighlightsSection />
+        <AwardsSection />
         <PatentsSection />
         <ExperienceSection />
         <EducationSection />

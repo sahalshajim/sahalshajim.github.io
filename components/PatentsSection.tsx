@@ -10,7 +10,7 @@ export default function PatentsSection() {
         <SectionHeader
           eyebrow="Patents"
           title="US Patents"
-          description="One granted US patent and two pending filings spanning open-world detection, bilingual medical LLMs, and pixel-grounded multimodal models."
+          description="Three granted US patents and one pending filing spanning open-world detection, bilingual medical LLMs, streaming text-to-speech for LLMs, and pixel-grounded multimodal models."
         />
         <ul className="mt-14 divide-y divide-black/5 border-y border-black/5">
           {patents.map((p, i) => (

@@ -189,13 +189,13 @@ Omkar Chakradhar Thawakar\*, Abdelrahman M Shaker\*, **Sahal Shaji Mullappilly**
 - GitHub: https://github.com/mbzuai-oryx/ClimateGPT
 - JAIS Climate page: https://mbzuai.ac.ae/sustainability/jais-climate/
 
-### A Benchmark and Agentic Framework for Omni-Modal Reasoning and Tool Use in Long Videos
-Mohammed Irfan Kurpath\*, Jaseel Muhammad Kaithakkodan\*, Jinxing Zhou, **Sahal Shaji Mullappilly**, Mohammad Almansoori, Noor Ahsan, Beknur Kalmakhanbet, Sambal Shikhar, Rishabh Lalla, Jean Lahoud, Mariette Awad, Fahad Shahbaz Khan, Salman Khan, Rao Muhammad Anwer, Hisham Cholakkal  
-**Venue:** CVPR 2026 – Findings  
-**Description:** This work introduces LongShOT, a benchmark and agentic framework for long-video understanding that goes beyond vision-only tasks by incorporating speech, audio, tool use, and open-ended reasoning. It is designed to diagnose failures in perception, cross-modal integration, and long-context reasoning, making evaluation of real-world omni-modal video systems more realistic and interpretable.  
+### Omni-Embed-Mini: Binding Modalities Without Forgetting via Dense Distillation
+Mohammed Irfan Kurpath, Jaseel Muhammad Kaithakkodan, **Sahal Shaji Mullappilly**, Ivan Laptev, Hisham Cholakkal  
+**Venue:** EMNLP 2026 – Findings  
+**Description:** A compact 0.9B-parameter embedding model that maps text, speech, audio, images, video and visually rich documents into one shared space without updating any text-side parameters, so text retrieval does not degrade. Dense-caption distillation from the frozen backbone, lightweight projectors and phased LoRA adapters bind the new modalities, with a 2.3B variant competitive with closed API embedders.  
 **Links:**
-- arXiv: https://arxiv.org/abs/2512.16978
-- GitHub: https://github.com/mbzuai-oryx/longshot
+- Paper: https://aclanthology.org/2026.findings-emnlp.2470/
+- Project: https://omniembed.cvmbzuai.com
 
 ### Semi-supervised Open-World Object Detection
 **Sahal Shaji Mullappilly**, Abhishek Singh Gehlot, Rao Muhammad Anwer, Fahad Shahbaz Khan, Hisham Cholakkal  

@@ -35,7 +35,7 @@ export default function HighlightsSection() {
   return (
     <section
       id="highlights"
-      className="bg-white py-16 md:py-24"
+      className="bg-white pt-16 md:pt-24"
     >
       <div className="mx-auto max-w-[1200px] px-6">
         <SectionHeader title="Research Highlights" align="center" />
